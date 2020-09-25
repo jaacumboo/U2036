@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body{margin:0px}
+
+.mainbox{
+display:flex;
+align-items:center;
+justify-content:center;
+background:black;
+height:100vh;
+color:lime;
+}
+
+span::before{
+content: ".";
+animation: load infinite 1s;}
+
+@keyframes load {
+  0%	{content: "+";}
+  20%	{content: "++";}
+  60%	{content: "+++";}
+  80%	{content: "++++";}
+  100%	{content: "+++++";}
+  }
+</style>
+</head>
+<body>
+
+<div class="mainbox">
+
+<div>
+<span style="font-size:20px"></span>
+</div>
+</div>
+
+</body>
+</html>
